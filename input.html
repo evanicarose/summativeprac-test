@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summative Practice Tesr</title>
+  </head>
+  <body>
+    <h1>Input Two Numbers - Equality, Greater than or Less than</h1>
+    <button onclick="computeDigits()">Evaluate</button>
+    <h2 id="result"></h2>
+
+    <script>
+      function computeDigits() {
+        let a = " ",
+          b = " ",
+          c,
+          x = 0,
+          y = 0;
+
+        a = prompt("The first number: ");
+        b = prompt("The second number: ");
+
+        x = parseInt(a);
+        y = parseInt(b);
+
+        if (a == b) {
+          c = document.getElementById("result").innerHTML =
+            "The 2 numbers are equal";
+        } else if (a > b) {
+          c = document.getElementById("result").innerHTML =
+            "The first number is greater than the second number.";
+        } else if (b > a) {
+          c = document.getElementById("result").innerHTML =
+            "The second number is greater than the first number.";
+        }
+      }
+    </script>
+  </body>
+</html>
